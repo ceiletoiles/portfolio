@@ -18,8 +18,7 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #203a43;
-      /* Old background color back! */
+      background-color: #232936;
       color: #f5f5f5;
       display: flex;
       flex-direction: column;
@@ -28,6 +27,7 @@
       min-height: 100vh;
       text-align: center;
       padding: 2rem;
+      overflow: hidden;
     }
 
     h1 {
@@ -62,30 +62,26 @@
     }
 
     .icon-btn {
-      padding: 0.8rem;
-      width: 56px;
-      height: 56px;
+      padding: 0;
+      width: 48px;
+      height: 48px;
+      display: flex;
       justify-content: center;
       align-items: center;
-      display: flex;
-      border-radius: 50%;
-      background-color: rgba(255, 255, 255, 0.08);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .icon-btn:hover {
-      transform: translateY(-2px) scale(1.05);
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+      background: none;
+      border: none;
+      box-shadow: none;
+      border-radius: 0;
+      transition: transform 0.3s ease;
     }
 
     .icon-img {
-      width: 26px;
-      height: 26px;
-      transition: transform 0.3s ease;
+      width: 32px;
+      height: 32px;
       object-fit: contain;
+      transition: transform 0.3s ease;
+      filter: brightness(0) invert(1);
     }
-
 
     .icon-btn:hover .icon-img {
       transform: scale(1.1);
@@ -108,14 +104,13 @@
       }
 
       .icon-btn {
-        width: 48px;
-        height: 48px;
-        padding: 0.6rem;
+        width: 40px;
+        height: 40px;
       }
 
       .icon-img {
-        width: 24px;
-        height: 24px;
+        width: 23px;
+        height: 23px;
       }
     }
   </style>
@@ -124,17 +119,16 @@
 <body>
   <div class="card">
     <h1>Shiv's Portfolio</h1>
-    <p>Work in progress, but we’re out here making moves.<br> Stay tuned for projects, art, chaos, and maybe a lil soul.
-    </p>
+    <p>Work in progress, but we’re out here making moves.<br> Stay tuned for projects, art, chaos, and maybe a lil soul.</p>
 
     <div class="buttons">
       <a href="https://github.com/ceiletoiles" target="_blank" rel="noopener" class="icon-btn">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
-          class="icon-img" />
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" class="icon-img" />
       </a>
       <a href="https://linkedin.com/in/tangerineishh" target="_blank" rel="noopener" class="icon-btn">
         <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="icon-img" />
       </a>
+    
     </div>
   </div>
 
